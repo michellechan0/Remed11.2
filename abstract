@@ -1,0 +1,19 @@
+abstract class RangkaianListrik {
+    String name;
+    abstract void display();
+} 
+
+class seri extends RangkaianListrik{
+     void display(){
+        System.out.println("rangkaian " + name);
+     }
+}
+
+public class App {
+    public static void main(String[] args) {
+        seri rangkaian = new seri();
+        rangkaian.name = "seri";
+        rangkaian.display();
+        
+    }
+}
